@@ -11,3 +11,13 @@
 - We also configure the Static website hosting in bucket Properties.
 ![image](https://user-images.githubusercontent.com/42272776/143780943-bd7fba54-5e44-4afd-b00b-ebcff8f288df.png)
 ![image](https://user-images.githubusercontent.com/42272776/143780793-fc175b66-8ebe-4781-a2c1-e9a34e445dff.png)
+
+## Hosting a Lambda function that tells whether a web page is up or not
+![image](https://user-images.githubusercontent.com/42272776/143782240-0956fddd-d006-489d-abf1-779e19bb6eb6.png)
+- Create an AWS Lambda Function with NodeJS as the language.
+![image](https://user-images.githubusercontent.com/42272776/143782138-6965ea3e-6388-4c5a-b2bd-73d206d9848c.png)
+- The logging information from a Lambda function gets routed to AWS cloud watch.
+- Notice the time billed for the operation.
+- Custom logging information also goes to AWS Cloud Watch - console.xxx statements.
+![image](https://user-images.githubusercontent.com/42272776/143782116-fbedd5de-a894-4826-b65b-33d655bfb703.png)
+- For reference: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-logging.html
