@@ -1,4 +1,4 @@
-# aws
+# AWS Hands-on
 
 ## Hosting a static website in AWS
 ![image](https://user-images.githubusercontent.com/42272776/143780612-5294497e-e81d-41df-b878-bc8caa2896c4.png)
