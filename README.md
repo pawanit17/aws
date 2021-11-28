@@ -16,6 +16,7 @@
 ![image](https://user-images.githubusercontent.com/42272776/143782240-0956fddd-d006-489d-abf1-779e19bb6eb6.png)
 - Execution role is like the service account that is used to run the lambda function.
 - Create an AWS Lambda Function with NodeJS as the language.
+![image](https://user-images.githubusercontent.com/42272776/143782396-0fe12395-962d-41ef-b7fa-3bd625a52d26.png)
 ![image](https://user-images.githubusercontent.com/42272776/143782138-6965ea3e-6388-4c5a-b2bd-73d206d9848c.png)
 - The logging information from a Lambda function gets routed to AWS cloud watch.
 - Notice the time billed for the operation.
