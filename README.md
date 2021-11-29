@@ -1,5 +1,6 @@
 # AWS Hands-on
 
+# S3
 ## Hosting a static website in AWS
 ![image](https://user-images.githubusercontent.com/42272776/143780612-5294497e-e81d-41df-b878-bc8caa2896c4.png)
 - Bucket Policy determines who all can use/access the bucket/its content.
@@ -12,6 +13,15 @@
 ![image](https://user-images.githubusercontent.com/42272776/143780943-bd7fba54-5e44-4afd-b00b-ebcff8f288df.png)
 ![image](https://user-images.githubusercontent.com/42272776/143780793-fc175b66-8ebe-4781-a2c1-e9a34e445dff.png)
 
+## S3 Bucket Replication
+![image](https://user-images.githubusercontent.com/42272776/143920852-223d5357-00c9-4d9d-8b81-0e395fa5dac4.png)
+- Create Bucket 1 and Bucket 2
+- In Management of Bucket 1, create a Replication Rule with Source as Bucket 1 and Target as Bucket 2.
+- ![image](https://user-images.githubusercontent.com/42272776/143920961-555fe1ae-7fd2-489b-a64b-1d21c583e140.png)
+- Any new files that are updated to AWS in Bucket 1 will now sync to Bucket 2 automatically.
+- ❓ How to sync existing ones?.
+
+# Lambda / Serverless
 ## Hosting a Lambda function that tells whether a web page is up or not
 ![image](https://user-images.githubusercontent.com/42272776/143782240-0956fddd-d006-489d-abf1-779e19bb6eb6.png)
 - Execution role is like the service account that is used to run the lambda function.
