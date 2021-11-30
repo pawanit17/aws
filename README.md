@@ -1,8 +1,12 @@
 # AWS Hands-on
 
 S3
-- https://github.com/pawanit17/aws#hosting-a-static-website-in-aws
-- 
+- [Hosting a Static Website](#hosting-a-static-website-in-aws)
+- [Bucket Versioning](#s3-versioning)
+- [Bucket Replication](#s3-bucket-replication)
+
+Lambda
+- [Hosting a Lambda function to determine if a Web Page is Up or Not](#hosting-a-lambda-function-that-tells-whether-a-web-page-is-up-or-not)
 
 ## Services
 
