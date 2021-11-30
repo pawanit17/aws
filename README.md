@@ -12,7 +12,7 @@ Lambda
 
 | Service      | Description |
 | ----------- | ----------- |
-| S3      | Scalable Secure Storage. S3 offer 99.999999999 durability and 99 availability. It also offers various Storage classes.  https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html https://aws.amazon.com/s3/pricing/    |
+| S3      | Simpe Storage Service. S3 offer 99.999999999 durability and 99 availability. It also offers various Storage classes.  https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html https://aws.amazon.com/s3/pricing/    |
 | Lambda   | Serverless        |
 | Cloud Watch | Logging |
 
