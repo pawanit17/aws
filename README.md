@@ -22,6 +22,28 @@
 ![image](https://user-images.githubusercontent.com/42272776/143780943-bd7fba54-5e44-4afd-b00b-ebcff8f288df.png)
 ![image](https://user-images.githubusercontent.com/42272776/143780793-fc175b66-8ebe-4781-a2c1-e9a34e445dff.png)
 
+# S3 Versioning
+- Versioning can be configured at Bucket level so that when a file with same name is uploaded, a version gets created.
+- ![image](https://user-images.githubusercontent.com/42272776/144109147-b74bae10-32b6-4200-ae6a-23a8fc4a579c.png)
+- Unlimited number of versions can be created. https://acloud.guru/forums/aws-csa-2019/discussion/-LzddK__zQps2CcoZum9/How%20many%20versions%20of%20a%20file%20can%20be%20saved%20in%20S3%3F
+- ![image](https://user-images.githubusercontent.com/42272776/144108361-71753a72-9fae-4bdb-b3d3-78b46fa94be1.png)
+- Public access can be granted from the UI of AWS on the Bucket/Object. But with a Bucket Policy, better control is provided statements/principals/actions/resources.
+```
+{
+    "Version": "2012-10-17",
+    "Id": "unique-id-to-describe-below-statement",
+    "Statement": [
+        {
+            "Sid": "unique-sid",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::testbucket99912121/*"
+        }
+    ]
+}
+```
+
 ## S3 Bucket Replication
 ![image](https://user-images.githubusercontent.com/42272776/143920852-223d5357-00c9-4d9d-8b81-0e395fa5dac4.png)
 - Create Bucket 1 and Bucket 2
