@@ -72,3 +72,6 @@ Lambda
 - Custom logging information also goes to AWS Cloud Watch - console.xxx statements.
 ![image](https://user-images.githubusercontent.com/42272776/143782116-fbedd5de-a894-4826-b65b-33d655bfb703.png)
 - For reference: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-logging.html
+
+# DynamoDB
+https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682
