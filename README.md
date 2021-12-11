@@ -1,3 +1,13 @@
+# List
+- Storage
+- Database
+- Servers
+- Deploying applications
+- Serverless
+- Logging / Monitoring
+- VPC and Networking
+- CI/CD
+
 # AWS Hands-on
 
 S3
