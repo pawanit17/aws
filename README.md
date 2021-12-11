@@ -75,3 +75,19 @@ Lambda
 
 # DynamoDB
 https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682
+
+
+
+# TODO
+https://learn.acloud.guru/handson/aacf9e92-0bb7-4969-aaf7-e2e106a7e339
+https://learn.acloud.guru/handson/e43cb83b-29db-4387-ae52-16d148d8445b
+https://learn.acloud.guru/handson/d901786a-b8a6-404c-9fc2-d55cf103f5ff
+https://learn.acloud.guru/handson/98627abc-6348-4ac3-8c66-e03e76dfbf5a
+https://learn.acloud.guru/handson/30295528-e932-4241-86fe-b8acaaba6c72
+https://learn.acloud.guru/handson/87f886fa-a4d2-4fa4-b9d6-e15faa744ded
+https://learn.acloud.guru/handson/f0626640-3d35-4dd8-9a9c-2f90dfd9f1de
+https://learn.acloud.guru/handson/7eaff9b2-dd90-48cd-9675-dfb8f62c8a09
+https://learn.acloud.guru/handson/cbda1fbf-6c65-439c-b284-ed96ef0e1f9d
+https://learn.acloud.guru/handson/d8590da1-be72-4e06-8a31-2e6e1c9863b6
+https://learn.acloud.guru/handson/a0c93cdb-127d-43e5-9026-aea0a8dc5c5d
+
