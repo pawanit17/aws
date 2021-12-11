@@ -84,13 +84,12 @@ Lambda
 - For reference: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-logging.html
 
 # DynamoDB
-https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682
-
 
 
 # TODO
 | HandsOn Description      | Status |
 | ----------- | ----------- |
+|https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682||
 |https://learn.acloud.guru/handson/aacf9e92-0bb7-4969-aaf7-e2e106a7e339||
 |https://learn.acloud.guru/handson/e43cb83b-29db-4387-ae52-16d148d8445b||
 |https://learn.acloud.guru/handson/d901786a-b8a6-404c-9fc2-d55cf103f5ff||
