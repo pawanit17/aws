@@ -1,3 +1,15 @@
+# Questions
+- How do you deploy a full stack application to AWS.
+- How does the application connect to the database.
+- How are REST APIs exposed to outside world.
+- What are VPCs.
+- What are Roles, IAM.
+- How are logs of an application viewed in AWS
+- Deploy a NodeJS application to EC2 and EBS
+- Deploy a SpringBoot application to EC2 and EBS
+- How are docker based applications deployed to AWS
+- Where does K8s come into picture for AWS
+
 # List
 - Storage
 - Database
