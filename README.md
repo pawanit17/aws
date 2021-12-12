@@ -8,6 +8,21 @@
 - VPC and Networking
 - CI/CD
 
+# Services
+
+| Category | Service      | Description |
+| ----------- | ----------- | ----------- |
+| Storage | S3      | Simpe Storage Service. S3 offer 99.999999999 durability and 99 availability. It also offers various Storage classes.  https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html https://aws.amazon.com/s3/pricing/    |
+| Serverless | Lambda   | Serverless        |
+| Logging | Cloud Watch | Logging |
+| CICD | CodeCommit | AWS CodeCommit is a secure, highly scalable, managed source control service that hosts private Git repositories. |
+| CICD | CodePipeline | Automated tests and deployment into environments when the source code changes |
+| CICD | CodeBuild | Fully manage service that compiles, tests and builds the deliverables for deployment |
+| CICD | CodeDeploy | Automates code deployments to any instances |
+| CICD | CodeStar | Used to create pipelines using the above 4 services as a wrapper |
+
+
+
 # AWS Hands-on
 
 S3
@@ -17,14 +32,6 @@ S3
 
 Lambda
 - [Hosting a Lambda function to determine if a Web Page is Up or Not](#hosting-a-lambda-function-that-tells-whether-a-web-page-is-up-or-not)
-
-## Services
-
-| Service      | Description |
-| ----------- | ----------- |
-| S3      | Simpe Storage Service. S3 offer 99.999999999 durability and 99 availability. It also offers various Storage classes.  https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html https://aws.amazon.com/s3/pricing/    |
-| Lambda   | Serverless        |
-| Cloud Watch | Logging |
 
 
 # S3
@@ -84,6 +91,9 @@ Lambda
 - For reference: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-logging.html
 
 # DynamoDB
+
+
+# CI/CD
 
 
 # TODO
