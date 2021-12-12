@@ -94,6 +94,13 @@ Lambda
 
 
 # CI/CD
+- AWS had a new service release in 2017, called CodeStar.
+- It is a fully managed service and encapsulates the other CI/CD services.
+- We have to choose a template in CodeStar and it would create the other services as shown below based on our selection.
+- ![image](https://user-images.githubusercontent.com/42272776/145706729-41e96a0e-e6bd-403e-906b-f8c313f83f54.png)
+- CodeStart also provisions CodeCommit repository for the project and an update to the content in that repository triggers a CI/CD pipeline.
+- ![image](https://user-images.githubusercontent.com/42272776/145706814-7c7943a3-2276-44b0-98e1-52bd2d1a39a6.png)
+- ![image](https://user-images.githubusercontent.com/42272776/145706701-64096930-e719-4be0-8e32-b74bf5a37941.png)
 
 
 # TODO
