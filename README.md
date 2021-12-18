@@ -48,6 +48,10 @@ Lambda
 
 
 # S3
+- S3 has different storage classes that are used based on the frequency of access.
+- ![image](https://user-images.githubusercontent.com/42272776/146633171-52a6d85b-10ff-4f5f-a9c2-532a1677a051.png)
+
+
 ## Hosting a static website in AWS
 ![image](https://user-images.githubusercontent.com/42272776/143780612-5294497e-e81d-41df-b878-bc8caa2896c4.png)
 - Bucket Policy determines who all can use/access the bucket/its content.
