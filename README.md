@@ -90,6 +90,13 @@ Lambda
 - Any new files that are updated to AWS in Bucket 1 will now sync to Bucket 2 automatically.
 - ❓ How to sync existing ones?.
 
+## S3 Bucket with Versioning and Deletion Protection - Lifecycle Configuration
+- ![image](https://user-images.githubusercontent.com/42272776/146632881-a7023323-7325-4b9b-b412-559e206a72f2.png)
+- Objects that are stored in S3 buckets may need to be deleted or moved to a different less costly storage after some time. Further, there may be certain objects in an S3 bucket that are to be archived. All these are configured using a Lifecycle rule.
+- ![image](https://user-images.githubusercontent.com/42272776/146632986-33cbb68f-53d6-492e-a213-93609edeff4b.png)
+- ![image](https://user-images.githubusercontent.com/42272776/146633002-a59f973b-dc3d-4925-88dc-3d28959067cf.png)
+- ![image](https://user-images.githubusercontent.com/42272776/146633012-936a34f0-9892-4e10-9e9a-cf6d57c417a7.png)
+
 # Lambda / Serverless
 ## Hosting a Lambda function that tells whether a web page is up or not
 ![image](https://user-images.githubusercontent.com/42272776/143782240-0956fddd-d006-489d-abf1-779e19bb6eb6.png)
@@ -129,7 +136,7 @@ Lambda
 |https://learn.acloud.guru/handson/f0626640-3d35-4dd8-9a9c-2f90dfd9f1de|Working with a DevOps CI/CD Pipeline in AWS using CodeStar |
 |https://learn.acloud.guru/handson/7eaff9b2-dd90-48cd-9675-dfb8f62c8a09||
 |https://learn.acloud.guru/handson/cbda1fbf-6c65-439c-b284-ed96ef0e1f9d||
-|https://learn.acloud.guru/handson/d8590da1-be72-4e06-8a31-2e6e1c9863b6||
+|https://learn.acloud.guru/handson/d8590da1-be72-4e06-8a31-2e6e1c9863b6| Configuring S3 Buckets for Versioning and Deletion Protection |
 |https://learn.acloud.guru/handson/a0c93cdb-127d-43e5-9026-aea0a8dc5c5d||
 |https://learn.acloud.guru/handson/3f2be21a-91fd-4872-aa33-58a1ee38e832||
 |https://learn.acloud.guru/handson/41b87a5a-b7e9-45d3-bd7c-cf9d93557a01||
