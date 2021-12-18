@@ -9,6 +9,7 @@
 - Deploy a SpringBoot application to EC2 and EBS
 - How are docker based applications deployed to AWS
 - Where does K8s come into picture for AWS
+- CI/CD of a simple application
 
 # List
 - Storage
