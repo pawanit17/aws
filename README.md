@@ -27,7 +27,7 @@
 | ----------- | ----------- | ----------- |
 | Storage | S3      | Simpe Storage Service. S3 offer 99.999999999 durability and 99 availability. It also offers various Storage classes.  https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html https://aws.amazon.com/s3/pricing/    |
 | Serverless | Lambda   | Serverless        |
-| Logging | Cloud Watch | Logging |
+| Logging | Cloud Watch | Application and Infrastructure Monitoring https://aws.amazon.com/cloudwatch/ |
 | CICD | CodeCommit | AWS CodeCommit is a secure, highly scalable, managed source control service that hosts private Git repositories. |
 | CICD | CodePipeline | Automated tests and deployment into environments when the source code changes |
 | CICD | CodeBuild | Fully manage service that compiles, tests and builds the deliverables for deployment |
@@ -120,6 +120,8 @@ Lambda
 
 
 # CI/CD
+
+## CodeStar
 - AWS had a new service release in 2017, called CodeStar.
 - It is a fully managed service and encapsulates the other CI/CD services.
 - We have to choose a template in CodeStar and it would create the other services as shown below based on our selection.
@@ -128,6 +130,7 @@ Lambda
 - ![image](https://user-images.githubusercontent.com/42272776/145706814-7c7943a3-2276-44b0-98e1-52bd2d1a39a6.png)
 - ![image](https://user-images.githubusercontent.com/42272776/145706701-64096930-e719-4be0-8e32-b74bf5a37941.png)
 
+## CodeCommit
 
 # TODO
 | HandsOn Description      | Status |
