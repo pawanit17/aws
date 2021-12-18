@@ -97,6 +97,7 @@ Lambda
 ## S3 Bucket with Versioning and Deletion Protection - Lifecycle Configuration
 - ![image](https://user-images.githubusercontent.com/42272776/146632881-a7023323-7325-4b9b-b412-559e206a72f2.png)
 - Objects that are stored in S3 buckets may need to be deleted or moved to a different less costly storage after some time. Further, there may be certain objects in an S3 bucket that are to be archived. All these are configured using a Lifecycle rule.
+- A note on encryption. https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html
 - ![image](https://user-images.githubusercontent.com/42272776/146633227-65ac3655-b4a1-40b3-9e78-d0004e356db0.png)
 - ![image](https://user-images.githubusercontent.com/42272776/146632986-33cbb68f-53d6-492e-a213-93609edeff4b.png)
 - ![image](https://user-images.githubusercontent.com/42272776/146633002-a59f973b-dc3d-4925-88dc-3d28959067cf.png)
