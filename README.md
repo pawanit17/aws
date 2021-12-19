@@ -34,14 +34,19 @@
 | CICD | CodeDeploy | Automates code deployments to any instances |
 | CICD | CodeStar | Used to create pipelines using the above 4 services as a wrapper |
 
-# AWS Hands-on
-
+# Summary
 S3
+- Is a storage service with high durability and availability and can hold files/objects and host a static website, serve as an archive of data.
+- Various storage classes exist that have varying cost implications.
+- Different storage classes have different replication behavior.
+- Can encrypt data using security keys.
+- Lifecycle policy helps in moving data between storage classes, purging after a certain threshold etc.
+- Replication policy helps in copying the data to a different location / region to help in minimising the access times.
+- Individual objects within the S3 bucket can be shared for public access while the bucket itself is private.
+
 - [Hosting a Static Website](#hosting-a-static-website-in-aws)
 - [Bucket Versioning](#s3-versioning)
 - [Bucket Replication](#s3-bucket-replication)
-- ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png)
-- Selected objects can be specifically shared in an S3 bucket while the bucket itself is not shared. ![image](https://user-images.githubusercontent.com/42272776/146680953-97ba6781-3d8d-4d09-a5f6-993f3dc04ff8.png)
 
 
 Lambda
@@ -51,7 +56,8 @@ Lambda
 # S3
 - S3 has different storage classes that are used based on the frequency of access.
 - ![image](https://user-images.githubusercontent.com/42272776/146633171-52a6d85b-10ff-4f5f-a9c2-532a1677a051.png)
-
+- ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png)
+- Selected objects can be specifically shared in an S3 bucket while the bucket itself is not shared. ![image](https://user-images.githubusercontent.com/42272776/146680953-97ba6781-3d8d-4d09-a5f6-993f3dc04ff8.png)
 
 ## Hosting a static website in AWS
 ![image](https://user-images.githubusercontent.com/42272776/143780612-5294497e-e81d-41df-b878-bc8caa2896c4.png)
