@@ -25,7 +25,7 @@
 
 | Category | Service      | Description |
 | ----------- | ----------- | ----------- |
-| Storage | S3      | Simpe Storage Service. S3 offer 99.999999999 durability and 99 availability. It also offers various Storage classes.  https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html https://aws.amazon.com/s3/pricing/    |
+| Storage | S3      | Simpe Storage Service. S3 offer 99.999999999 durability and 99 availability. It also offers various Storage classes.  Data is automatically distributed across minimum of three physical Availability Zones within the AWS region. https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html https://aws.amazon.com/s3/pricing/    |
 | Serverless | Lambda   | Serverless        |
 | Logging | Cloud Watch | Application and Infrastructure Monitoring https://aws.amazon.com/cloudwatch/ |
 | CICD | CodeCommit | AWS CodeCommit is a secure, highly scalable, managed source control service that hosts private Git repositories. |
