@@ -34,8 +34,6 @@
 | CICD | CodeDeploy | Automates code deployments to any instances |
 | CICD | CodeStar | Used to create pipelines using the above 4 services as a wrapper |
 
-
-
 # AWS Hands-on
 
 S3
@@ -43,6 +41,8 @@ S3
 - [Bucket Versioning](#s3-versioning)
 - [Bucket Replication](#s3-bucket-replication)
 - ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png)
+- Selected objects can be specifically shared in an S3 bucket while the bucket itself is not shared. ![image](https://user-images.githubusercontent.com/42272776/146680953-97ba6781-3d8d-4d09-a5f6-993f3dc04ff8.png)
+
 
 Lambda
 - [Hosting a Lambda function to determine if a Web Page is Up or Not](#hosting-a-lambda-function-that-tells-whether-a-web-page-is-up-or-not)
