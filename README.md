@@ -10,6 +10,7 @@
 - How are docker based applications deployed to AWS
 - Where does K8s come into picture for AWS
 - CI/CD of a simple application
+- Build a simple application that uploads file to S3
 
 # List
 - Storage
