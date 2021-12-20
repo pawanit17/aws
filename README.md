@@ -9,8 +9,12 @@
 - Deploy a SpringBoot application to EC2 and EBS
 - How are docker based applications deployed to AWS
 - Where does K8s come into picture for AWS
-- CI/CD of a simple application
 - Build a simple application that uploads file to S3
+- 👍 Build a simple application on SpringBoot and deploy to AWS using Elastic Beanstalk
+- 🏃Build a simple application with a front end that communicates to AWS backend on EBS.
+- Build a simple application on SpringBoot and deploy it to containers and then to AWS using containers
+- CI/CD of a simple application
+
 
 # List
 - Storage
