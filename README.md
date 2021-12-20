@@ -126,6 +126,42 @@ Lambda
 
 # DynamoDB
 
+# Elastic Beanstalk
+## Deploying a SpringBoot jar file to EBS
+- A simple SpringBoot application that processes GET, POST, DELETE and PUT requests onto the URI /movies.
+```
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("movies")
+public class RestAPIController {
+
+    @GetMapping
+    public String getUser() {
+        return "Get Movies";
+    }
+
+    @PostMapping
+    public String createUser() {
+        return "Post Movies";
+    }
+
+    @PutMapping
+    public String updateUser() {
+        return "Put Movies";
+    }
+
+    @DeleteMapping
+    public String deleteUser() {
+        return "Delete Movies";
+    }
+}
+```
+- ![image](https://user-images.githubusercontent.com/42272776/146810781-0c15c93a-af37-4c16-8278-82b1fe4736c2.png)
+- Good read: https://cloudkatha.com/how-to-deploy-spring-boot-application-to-aws-elastic-beanstalk/
+- Set up an environmental variable SERVER_PORT with value 5000.
+- ![image](https://user-images.githubusercontent.com/42272776/146811707-a94055d6-fb67-421f-b333-595ae3abf061.png)
+- ![image](https://user-images.githubusercontent.com/42272776/146812011-9ce235ac-0c4e-4d6a-9cf1-1bb02e720215.png)
 
 # CI/CD
 
