@@ -13,6 +13,7 @@
 - 👍 Build a simple application on SpringBoot and deploy to AWS using Elastic Beanstalk
 - 👍 Build a simple application with a front end that communicates to AWS backend on EBS.
 - 🏃 Build an app that retuns a list of movies of a given genre.
+- Where are application logs stored in AWS
 - Build an app that leverages AWS load balancer
 - Build a simple application on SpringBoot and deploy it to containers and then to AWS using containers
 - CI/CD of a simple application
