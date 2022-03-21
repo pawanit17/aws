@@ -21,13 +21,29 @@
 
 # List
 - Storage
+  - S3 
 - Database
+  - DynamoDB
+  - ElasticCache
+  - Amazon Keyspaces
+  - RDS
 - Servers
+  - EC2
+  - Elastic Beanstalk
+- Containers
+  - Elastic Container Registry
+  - Elastic Container Service
+  - Elastic Kubernetes Service
 - Deploying applications
 - Serverless
+  - Lambda 
 - Logging / Monitoring
 - VPC and Networking
 - CI/CD
+  - CodeCommit
+  - CodeBuild
+  - CodeDeploy
+  - CodePipeline
 
 # Services
 
