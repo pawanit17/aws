@@ -3,6 +3,10 @@
 - Availability Zone is like a datacenter - Hitech Campus Eindhoven. This can be more than one datacenter. Each AZ in a region are like 100Kms from each other.
 - Edge Location - Endpoints for caching like CloudFront (CDN). More than 200 edge locations.
 
+- Whitepapers: https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html?did=wp_card&trk=wp_card
+
+![image](https://user-images.githubusercontent.com/42272776/160228124-a09bbc41-1c93-4495-b23b-ac73e4637375.png)
+
 # Questions
 - How do you deploy a full stack application to AWS.
 - How does the application connect to the database.
@@ -26,7 +30,7 @@
 
 # List
 - Storage
-  - S3 
+  - S3
 - Database
   - DynamoDB
   - ElasticCache
@@ -35,15 +39,17 @@
 - Servers
   - EC2
   - Elastic Beanstalk
+  - Lambda
 - Containers
   - Elastic Container Registry
   - Elastic Container Service
   - Elastic Kubernetes Service
 - Deploying applications
-- Serverless
-  - Lambda 
 - Logging / Monitoring
-- VPC and Networking
+- Networking
+  - VPC
+  - Route 53
+  - API Gateway 
 - CI/CD
   - CodeCommit
   - CodeBuild
