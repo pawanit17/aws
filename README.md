@@ -71,7 +71,7 @@
 
 # Overview
 ## S3
-- S3 is **object** based storages - Image, text, webpage. So can't be used as a database.
+- S3 is **object** based storages - Image, text, webpage. So can't be used as a database. S3 scales on demand.
 - **Unlimited** storage. Object max size is **5TB**.
 - S3 **buckets** are like **folders** in S3 - Finance, HR etc, but need to have **Universal** Unique name.
 - URL for the bucket looks like: https://bucket-name.s3.Region.aws.com/key-name
@@ -95,7 +95,6 @@
   - Searches are fast with Object storage. Big Data analytics usecases.
   - Updates with Block storage are easier as we have access to individual blocks. With object storage, this is not possible. Entire file has to be created again.
   - S3 offers Object storage. Amazon Elastic Block Storage offers Block storage solutions.
-
 - https://aws.amazon.com/s3/faqs/
 - Is a storage service with high durability and availability and can hold files/objects and host a static website, serve as an archive of data.
 - Various storage classes exist that have varying cost implications.
@@ -106,20 +105,15 @@
 - Individual objects within the S3 bucket can be shared for public access while the bucket itself is private.
 - Selected objects can be specifically shared in an S3 bucket while the bucket itself is not shared. ![image](https://user-images.githubusercontent.com/42272776/146680953-97ba6781-3d8d-4d09-a5f6-993f3dc04ff8.png)
 
+### Storage classes
 - S3 has different storage classes that are used based on the frequency of access.
 - ![image](https://user-images.githubusercontent.com/42272776/146633171-52a6d85b-10ff-4f5f-a9c2-532a1677a051.png)
-- ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png) 
-### Hands on
-- [Hosting a Static Website](#hosting-a-static-website-in-aws)
-- [Bucket Versioning](#s3-versioning)
-- [Bucket Replication](#s3-bucket-replication)
+- ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png)
+- Archive feature is related to S3 Glacier / S3 Deep Archive Glacier.
+- ![image](https://user-images.githubusercontent.com/42272776/160279856-14d956c0-e282-4c78-b09f-212a16e2519e.png)
+- ![image](https://user-images.githubusercontent.com/42272776/160279897-62f4c204-a3a1-40cb-809c-7aa94eb39833.png)
 
-
-
-# S3
-
-
-## Hosting a static website in AWS
+### Hosting a static website in AWS
 ![image](https://user-images.githubusercontent.com/42272776/143780612-5294497e-e81d-41df-b878-bc8caa2896c4.png)
 - Bucket Policy determines who all can use/access the bucket/its content.
 - /* means making the Policy applicable to all the objects in the Bucket.
@@ -131,8 +125,11 @@
 ![image](https://user-images.githubusercontent.com/42272776/143780943-bd7fba54-5e44-4afd-b00b-ebcff8f288df.png)
 ![image](https://user-images.githubusercontent.com/42272776/143780793-fc175b66-8ebe-4781-a2c1-e9a34e445dff.png)
 
-## S3 Versioning
-- Versioning can be configured at Bucket level so that when a file with same name is uploaded, a version gets created.
+### S3 Versioning
+- **Versioning** can be configured at **Bucket level** so that when a file with same name is uploaded, a new version gets created.
+- Versioning cannot be disabled, only suspended.
+- Policies do not apply to the previous versions of the objects in the bucket. Explicit access needs to be granted via Make Public action.
+- Deleting an object that has versioning turned on, will create a Delete marker instead. If this marker is deleted, then the objects are available again. 
 - ![image](https://user-images.githubusercontent.com/42272776/144109147-b74bae10-32b6-4200-ae6a-23a8fc4a579c.png)
 - Unlimited number of versions can be created. https://acloud.guru/forums/aws-csa-2019/discussion/-LzddK__zQps2CcoZum9/How%20many%20versions%20of%20a%20file%20can%20be%20saved%20in%20S3%3F
 - ![image](https://user-images.githubusercontent.com/42272776/144108361-71753a72-9fae-4bdb-b3d3-78b46fa94be1.png)
