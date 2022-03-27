@@ -70,7 +70,7 @@
 | CICD | CodeStar | Used to create pipelines using the above 4 services as a wrapper |
 
 # Overview
-S3
+## S3
 - S3 is **object** based storages - Image, text, webpage. So can't be used as a database.
 - **Unlimited** storage. Object max size is **5TB**.
 - S3 **buckets** are like **folders** in S3 - Finance, HR etc, but need to have **Universal** Unique name.
@@ -86,16 +86,16 @@ S3
 - Frequent access
 - CDN, Mobile Apps, Big Data are applications.
 - **Lifecycle Management** is the scheme for moving data that meets a certain threshold to move to cheaper S3 options like glacier/deep glacier.
-- **Bucket Policies** specify what actions are allowed or denied at bucket level. Ex: PUT are allowed but not DELETE.
-- **ACL**s define which AWS accounts are granted access and they type of access. The ACLs can be attached on individual objects within a bucket as well.
-- Strong Read-After-Write Consistency
-
-- Object vs Block Storage ( https://cloud.netapp.com/blog/block-storage-vs-object-storage-cloud )
+- **Bucket Policies** work at **Bucket level** and specify what actions are allowed or denied at bucket level. Ex: PUT are allowed but not DELETE.
+- **ACL**s work at individual **object level** and define which AWS accounts are granted access and they type of access. The ACLs can be attached on individual objects within a bucket as well.
+- Strong Read-After-Write Consistency.
+### Object vs Block Storage ( https://cloud.netapp.com/blog/block-storage-vs-object-storage-cloud )
   - Object storage is useful for data that does not change often. Write-once Ready-Many times usecases. Also this is compatible with distributed systems - data stored in multiple nodes.
   - Block storage is useful for holding databases/caches. Also for high intensive IO operations.
   - Searches are fast with Object storage. Big Data analytics usecases.
   - Updates with Block storage are easier as we have access to individual blocks. With object storage, this is not possible. Entire file has to be created again.
   - S3 offers Object storage. Amazon Elastic Block Storage offers Block storage solutions.
+
 - https://aws.amazon.com/s3/faqs/
 - Is a storage service with high durability and availability and can hold files/objects and host a static website, serve as an archive of data.
 - Various storage classes exist that have varying cost implications.
@@ -104,21 +104,20 @@ S3
 - Lifecycle policy helps in moving data between storage classes, purging after a certain threshold etc.
 - Replication policy helps in copying the data to a different location / region to help in minimising the access times.
 - Individual objects within the S3 bucket can be shared for public access while the bucket itself is private.
+- Selected objects can be specifically shared in an S3 bucket while the bucket itself is not shared. ![image](https://user-images.githubusercontent.com/42272776/146680953-97ba6781-3d8d-4d09-a5f6-993f3dc04ff8.png)
 
+- S3 has different storage classes that are used based on the frequency of access.
+- ![image](https://user-images.githubusercontent.com/42272776/146633171-52a6d85b-10ff-4f5f-a9c2-532a1677a051.png)
+- ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png) 
+### Hands on
 - [Hosting a Static Website](#hosting-a-static-website-in-aws)
 - [Bucket Versioning](#s3-versioning)
 - [Bucket Replication](#s3-bucket-replication)
 
 
-Lambda
-- [Hosting a Lambda function to determine if a Web Page is Up or Not](#hosting-a-lambda-function-that-tells-whether-a-web-page-is-up-or-not)
-
 
 # S3
-- S3 has different storage classes that are used based on the frequency of access.
-- ![image](https://user-images.githubusercontent.com/42272776/146633171-52a6d85b-10ff-4f5f-a9c2-532a1677a051.png)
-- ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png)
-- Selected objects can be specifically shared in an S3 bucket while the bucket itself is not shared. ![image](https://user-images.githubusercontent.com/42272776/146680953-97ba6781-3d8d-4d09-a5f6-993f3dc04ff8.png)
+
 
 ## Hosting a static website in AWS
 ![image](https://user-images.githubusercontent.com/42272776/143780612-5294497e-e81d-41df-b878-bc8caa2896c4.png)
@@ -172,6 +171,11 @@ Lambda
 - ![image](https://user-images.githubusercontent.com/42272776/146633012-936a34f0-9892-4e10-9e9a-cf6d57c417a7.png)
 
 # Lambda / Serverless
+
+
+Lambda
+- [Hosting a Lambda function to determine if a Web Page is Up or Not](#hosting-a-lambda-function-that-tells-whether-a-web-page-is-up-or-not)
+- 
 ## Hosting a Lambda function that tells whether a web page is up or not
 ![image](https://user-images.githubusercontent.com/42272776/143782240-0956fddd-d006-489d-abf1-779e19bb6eb6.png)
 - Execution role is like the service account that is used to run the lambda function.
