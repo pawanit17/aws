@@ -69,8 +69,34 @@
 | CICD | CodeDeploy | Automates code deployments to any instances |
 | CICD | CodeStar | Used to create pipelines using the above 4 services as a wrapper |
 
-# Summary
+# Overview
 S3
+- S3 is **object** based storages - Image, text, webpage. So can't be used as a database.
+- **Unlimited** storage. Object max size is **5TB**.
+- S3 **buckets** are like **folders** in S3 - Finance, HR etc, but need to have **Universal** Unique name.
+- URL for the bucket looks like: https://bucket-name.s3.Region.aws.com/key-name
+- When we upload an object to a bucket, each object would have the below information:
+- **Key** for the objects is typically the name of the objects.
+- **Value** is the actual content made up of sequence of bytes.
+- **Metadata** is the actual metadata associated with the objects ( last accessed, content type etc ).
+- **Version ID** To identify multiple versions of the objects.
+- S3 Standard is the default version.
+- High Availability 99.99%
+- High Durability 99.999999999%
+- Frequent access
+- CDN, Mobile Apps, Big Data are applications.
+- **Lifecycle Management** is the scheme for moving data that meets a certain threshold to move to cheaper S3 options like glacier/deep glacier.
+- **Bucket Policies** specify what actions are allowed or denied at bucket level. Ex: PUT are allowed but not DELETE.
+- **ACL**s define which AWS accounts are granted access and they type of access. The ACLs can be attached on individual objects within a bucket as well.
+- Strong Read-After-Write Consistency
+
+- Object vs Block Storage ( https://cloud.netapp.com/blog/block-storage-vs-object-storage-cloud )
+  - Object storage is useful for data that does not change often. Write-once Ready-Many times usecases. Also this is compatible with distributed systems - data stored in multiple nodes.
+  - Block storage is useful for holding databases/caches. Also for high intensive IO operations.
+  - Searches are fast with Object storage. Big Data analytics usecases.
+  - Updates with Block storage are easier as we have access to individual blocks. With object storage, this is not possible. Entire file has to be created again.
+  - S3 offers Object storage. Amazon Elastic Block Storage offers Block storage solutions.
+- https://aws.amazon.com/s3/faqs/
 - Is a storage service with high durability and availability and can hold files/objects and host a static website, serve as an archive of data.
 - Various storage classes exist that have varying cost implications.
 - Different storage classes have different replication behavior.
@@ -89,16 +115,6 @@ Lambda
 
 
 # S3
-- S3 is object based storages - Image, text, webpage. So can't be used as a database.
-- Unlimited storage. Object max size is 5TB.
-- S3 buckets are like folders in S3 - Finance, HR etc, but need to have Universal Unique space.
-- Object vs Block Storage
-  - Object storage is useful for data that does not change often. Write-once Ready-Many times usecases. Also this is compatible with distributed systems - data stored in multiple nodes.
-  - Block storage is useful for holding databases/caches. Also for high intensive IO operations.
-  - Searches are fast with Object storage. Big Data analytics usecases.
-  - Updates with Block storage are easier as we have access to individual blocks. With object storage, this is not possible. Entire file has to be created again.
-  - S3 offers Object storage. Amazon Elastic Block Storage offers Block storage solutions.
-- https://aws.amazon.com/s3/faqs/
 - S3 has different storage classes that are used based on the frequency of access.
 - ![image](https://user-images.githubusercontent.com/42272776/146633171-52a6d85b-10ff-4f5f-a9c2-532a1677a051.png)
 - ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png)
