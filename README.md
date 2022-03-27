@@ -89,6 +89,16 @@ Lambda
 
 
 # S3
+- S3 is object based storages - Image, text, webpage. So can't be used as a database.
+- Unlimited storage. Object max size is 5TB.
+- S3 buckets are like folders in S3 - Finance, HR etc, but need to have Universal Unique space.
+- Object vs Block Storage
+  - Object storage is useful for data that does not change often. Write-once Ready-Many times usecases. Also this is compatible with distributed systems - data stored in multiple nodes.
+  - Block storage is useful for holding databases/caches. Also for high intensive IO operations.
+  - Searches are fast with Object storage. Big Data analytics usecases.
+  - Updates with Block storage are easier as we have access to individual blocks. With object storage, this is not possible. Entire file has to be created again.
+  - S3 offers Object storage. Amazon Elastic Block Storage offers Block storage solutions.
+- https://aws.amazon.com/s3/faqs/
 - S3 has different storage classes that are used based on the frequency of access.
 - ![image](https://user-images.githubusercontent.com/42272776/146633171-52a6d85b-10ff-4f5f-a9c2-532a1677a051.png)
 - ![image](https://user-images.githubusercontent.com/42272776/146680782-11e8a8f1-a325-4032-9caa-02873018633f.png)
