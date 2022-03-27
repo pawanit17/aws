@@ -153,7 +153,7 @@
 ## S3 Bucket Replication
 ![image](https://user-images.githubusercontent.com/42272776/143920852-223d5357-00c9-4d9d-8b81-0e395fa5dac4.png)
 - Create Bucket 1 and Bucket 2
-- In Management of Bucket 1, create a Replication Rule with Source as Bucket 1 and Target as Bucket 2.
+- In Management of Bucket 1, create a **Replication Rule** with Source as Bucket 1 and Target as Bucket 2.
 - ![image](https://user-images.githubusercontent.com/42272776/143920961-555fe1ae-7fd2-489b-a64b-1d21c583e140.png)
 - Any new files that are updated to AWS in Bucket 1 will now sync to Bucket 2 automatically.
 - ❓ How to sync existing ones?.
@@ -162,11 +162,35 @@
 - ![image](https://user-images.githubusercontent.com/42272776/146632881-a7023323-7325-4b9b-b412-559e206a72f2.png)
 - Objects that are stored in S3 buckets may need to be deleted or moved to a different less costly storage after some time. Further, there may be certain objects in an S3 bucket that are to be archived. All these are configured using a Lifecycle rule.
 - Lifecycle configuration also applies to versions of the objects.
+- By defauly, Delete markers are not replicated. This could be turned on though.
 - A note on encryption. https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html
 - ![image](https://user-images.githubusercontent.com/42272776/146633227-65ac3655-b4a1-40b3-9e78-d0004e356db0.png)
 - ![image](https://user-images.githubusercontent.com/42272776/146632986-33cbb68f-53d6-492e-a213-93609edeff4b.png)
 - ![image](https://user-images.githubusercontent.com/42272776/146633002-a59f973b-dc3d-4925-88dc-3d28959067cf.png)
 - ![image](https://user-images.githubusercontent.com/42272776/146633012-936a34f0-9892-4e10-9e9a-cf6d57c417a7.png)
+
+### Locks
+- Object locks are of two types - Governance and Compliance.
+- They determine whether an update to an object is possible or not.
+- Compliance Mode - An Object cannot be overwritten or deleted by any user, including the root user.
+- Governance Mode - An Object cannot be overwritten or deleted by a user, unless that user has special permissions.
+
+### Encryption
+- Encryption in Transit
+  - HTTPS
+  - SSL/TLS
+- Encryption at Rest: Server side Encryption
+  - SSE-S3: S3 maanged keys, using AES 256 (x-amz-server-side-encryption:AES256)
+  - SSE-KMS: AWS KMS managed keys (x-amz-server-side-encryption:aaws:kms)
+  - SSE-C: Customer provided keys
+- Encryption at Rest: Client side Encryption
+  - Encrypt of files yourself before upload to S3
+- S3 bucket policy can be introduced to stop the upload of files for the PUT requests that do not have x-amz-server-side-encryption flag.
+
+### S3 Performance
+- Using prefixes help in the performance of READs
+- Multipart uploads are used to upload larger files in S3
+- When using KMS, there is an upper limit. Breaching this would slower performance.
 
 # Lambda / Serverless
 
