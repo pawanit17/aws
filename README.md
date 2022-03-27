@@ -181,7 +181,7 @@
   - SSL/TLS
 - Encryption at Rest: Server side Encryption
   - SSE-S3: S3 maanged keys, using AES 256 (x-amz-server-side-encryption:AES256)
-  - SSE-KMS: AWS KMS managed keys (x-amz-server-side-encryption:aaws:kms)
+  - SSE-KMS: AWS KMS managed keys (x-amz-server-side-encryption:aaws:kms)(limites to upload and download)
   - SSE-C: Customer provided keys
 - Encryption at Rest: Client side Encryption
   - Encrypt of files yourself before upload to S3
@@ -189,7 +189,11 @@
 
 ### S3 Performance
 - Using prefixes help in the performance of READs
-- Multipart uploads are used to upload larger files in S3
+- Prefix is nothing but the hierarchy. For ex: mybucketname/folder1/subfolder1/myfile.jpg.
+- You can achieve better performance if the prefixes are more.
+- Your applications can easily achieve thousands of transactions per second in request performance when uploading and retrieving storage from Amazon S3. Amazon S3 automatically scales to high request rates. For example, your application can achieve at least 3,500 PUT/COPY/POST/DELETE or 5,500 GET/HEAD requests per second per prefix in a bucket. There are no limits to the number of prefixes in a bucket. You can increase your read or write performance by parallelizing reads. For example, if you create 10 prefixes in an Amazon S3 bucket to parallelize reads, you could scale your read performance to 55,000 read requests per second. Similarly, you can scale write operations by writing to multiple prefixes.
+- Multipart uploads are used to upload larger files in S3 efficiently ( better to use for > 100MB and definitely > 5GB ).
+- Use S3 byte range fetches to increase performance when downloading files to S3.
 - When using KMS, there is an upper limit. Breaching this would slower performance.
 
 # Lambda / Serverless
