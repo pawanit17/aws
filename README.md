@@ -226,7 +226,20 @@
   - Give minimum privilege and add more privilege as per need.
   - When a new user is created, by default he does not have any access.
 - SAML - To use the same username and password that a user uses to log into Windows, to log onto AWS. IAM Federation.
--  
+
+# EC2
+- Elastic Compute Cloud
+- Types of instances
+  - On Demand
+    - Pay be the hour or second. 
+  - Reserved
+    - Reserve the capacity for 1-3 years. 
+  - Spot Instances
+    - Buy unused instances at cheaper prices. Good for applications that have flexible start and end times. 
+  - Dedicated
+    - Banking, Finance applications could have certain regulations to not deploy in multi tenancy virtualization.
+
+
 
 
 
