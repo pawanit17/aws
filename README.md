@@ -150,7 +150,7 @@
 }
 ```
 
-## S3 Bucket Replication
+### S3 Bucket Replication
 ![image](https://user-images.githubusercontent.com/42272776/143920852-223d5357-00c9-4d9d-8b81-0e395fa5dac4.png)
 - Create Bucket 1 and Bucket 2
 - In Management of Bucket 1, create a **Replication Rule** with Source as Bucket 1 and Target as Bucket 2.
@@ -158,7 +158,7 @@
 - Any new files that are updated to AWS in Bucket 1 will now sync to Bucket 2 automatically.
 - ❓ How to sync existing ones?.
 
-## S3 Bucket with Versioning and Deletion Protection - Lifecycle Configuration
+### S3 Bucket with Versioning and Deletion Protection - Lifecycle Configuration
 - ![image](https://user-images.githubusercontent.com/42272776/146632881-a7023323-7325-4b9b-b412-559e206a72f2.png)
 - Objects that are stored in S3 buckets may need to be deleted or moved to a different less costly storage after some time. Further, there may be certain objects in an S3 bucket that are to be archived. All these are configured using a Lifecycle rule.
 - Lifecycle configuration also applies to versions of the objects.
@@ -195,6 +195,40 @@
 - Multipart uploads are used to upload larger files in S3 efficiently ( better to use for > 100MB and definitely > 5GB ).
 - Use S3 byte range fetches to increase performance when downloading files to S3.
 - When using KMS, there is an upper limit. Breaching this would slower performance.
+
+## IAM
+- Root Account - Has full administrative account for the AWS account.
+- Multi Factor Authentication configuration lets you secure the root account.
+- Alternative options are creating an admin group for administrators and assigning the appropriate permissions to this group followed by creating user accounts to these administrators.
+- Policies
+  - Access is controlled via policy documents, which are JSON documents.
+  - Ex: Allow the ability to do everything with every resource - user or group to which this policy is applied to.
+ ```
+ {
+   "Version": "2012-10-17",
+   "Statement": [
+     {
+       "Effect": "Allow",
+       "Action": "*",
+       "Resource": "*"
+     }
+   ]
+}
+```
+![image](https://user-images.githubusercontent.com/42272776/160850792-85530990-f796-40e6-b51e-f46ac9bb906a.png)
+- In general, for ease of maintenance, policies are not applied to Users. Instead they are applied at Group level and Users are added to those groups.
+- Users, Groups, Policies are Global.
+- **Building Blocks**
+  - Users(Physical person)
+  - Groups(Functions such as Adminstrator, Developer)
+  - Roles(internal use in AWS, allows one part of AWS to access another part of AWS).
+- Principle of least privilege
+  - Give minimum privilege and add more privilege as per need.
+  - When a new user is created, by default he does not have any access.
+- SAML - To use the same username and password that a user uses to log into Windows, to log onto AWS. IAM Federation.
+-  
+
+
 
 # Lambda / Serverless
 
