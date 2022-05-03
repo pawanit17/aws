@@ -275,6 +275,7 @@
 - We can even configure sticky sessions in the target group - which may be useful for stateful applications.
 - Two EC2 instances for which an ALB shall be configured
 - ![image](https://user-images.githubusercontent.com/42272776/166507004-ee31bd6b-0b87-484d-897c-6073080efbcb.png)
+- Target group looks like below
 - ![image](https://user-images.githubusercontent.com/42272776/166507951-30b12054-3826-47ea-8d41-28a609c1217b.png)
 
 # Lambda / Serverless
