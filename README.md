@@ -314,51 +314,51 @@ public class RestAPIController {
 ## CodeCommit
 
 # TODO
-| HandsOn Description      | Status |
+| URL      | Description |
 | ----------- | ----------- |
-|https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682||
-|https://learn.acloud.guru/handson/aacf9e92-0bb7-4969-aaf7-e2e106a7e339||
-|https://learn.acloud.guru/handson/e43cb83b-29db-4387-ae52-16d148d8445b||
-|https://learn.acloud.guru/handson/d901786a-b8a6-404c-9fc2-d55cf103f5ff||
-|https://learn.acloud.guru/handson/98627abc-6348-4ac3-8c66-e03e76dfbf5a||
-|https://learn.acloud.guru/handson/30295528-e932-4241-86fe-b8acaaba6c72||
-|https://learn.acloud.guru/handson/87f886fa-a4d2-4fa4-b9d6-e15faa744ded||
+|https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682|Creating a DynamoDB Table|
+|https://learn.acloud.guru/handson/aacf9e92-0bb7-4969-aaf7-e2e106a7e339|Deploy an Amazon RDS Multi-AZ and Read Replica in AWS|
+|https://learn.acloud.guru/handson/e43cb83b-29db-4387-ae52-16d148d8445b|Create and Work with an EC2 Instance in AWS|
+|https://learn.acloud.guru/handson/d901786a-b8a6-404c-9fc2-d55cf103f5ff|Use Application Load Balancers for Web Servers|
+|https://learn.acloud.guru/handson/98627abc-6348-4ac3-8c66-e03e76dfbf5a|AWS DynamoDB in the Console - Creating Tables, Items, and Indexes|
+|https://learn.acloud.guru/handson/30295528-e932-4241-86fe-b8acaaba6c72|Programmatically Utilizing Data From S3|
+|https://learn.acloud.guru/handson/87f886fa-a4d2-4fa4-b9d6-e15faa744ded|Setting Up a Pipeline with a Manual Approval in AWS CodePipeline|
 |https://learn.acloud.guru/handson/f0626640-3d35-4dd8-9a9c-2f90dfd9f1de|Working with a DevOps CI/CD Pipeline in AWS using CodeStar |
-|https://learn.acloud.guru/handson/7eaff9b2-dd90-48cd-9675-dfb8f62c8a09||
-|https://learn.acloud.guru/handson/cbda1fbf-6c65-439c-b284-ed96ef0e1f9d||
-|https://learn.acloud.guru/handson/d8590da1-be72-4e06-8a31-2e6e1c9863b6| Configuring S3 Buckets for Versioning and Deletion Protection |
-|https://learn.acloud.guru/handson/a0c93cdb-127d-43e5-9026-aea0a8dc5c5d||
-|https://learn.acloud.guru/handson/3f2be21a-91fd-4872-aa33-58a1ee38e832||
-|https://learn.acloud.guru/handson/41b87a5a-b7e9-45d3-bd7c-cf9d93557a01||
-|https://learn.acloud.guru/handson/b3dd0d1c-b4cf-489f-8a5b-fd0ccbf6d8fd||
-|https://learn.acloud.guru/handson/aae676dc-fe12-4fff-8d16-dd6a25e12f2b||
-|https://learn.acloud.guru/handson/2d9e37e1-3733-4227-8e46-8d22dc519585||
-|https://learn.acloud.guru/handson/d70cdd62-361e-4dc9-af83-30a6b1ba4db5||
-|https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682||
-|https://learn.acloud.guru/handson/f2b58b6b-2a05-435a-8746-ca1ff25b9773||
-|https://learn.acloud.guru/handson/682d1793-2bc5-455b-9485-97be5499b676||
-|https://learn.acloud.guru/handson/ab9e8bda-1f6f-4af8-9465-f8e3e14cc7d1||
-|https://learn.acloud.guru/handson/61adc9c0-7327-4212-bb45-372d61db939f||
-|https://learn.acloud.guru/handson/349a802d-49b3-41a1-8cbe-d211c05d4133||
-|https://learn.acloud.guru/handson/4b94c76a-7cab-4f50-accc-3709552dfdd7||
-|https://learn.acloud.guru/handson/9c11732b-b9f7-403d-8cb8-d70f7b5f34fb||
-|https://learn.acloud.guru/handson/9f1588c0-7186-475b-8bd1-9d88b86779e5||
-|https://learn.acloud.guru/handson/262a58ab-49e1-4102-b2a2-b746c06ba74d||
-|https://learn.acloud.guru/handson/8a6fba26-ff01-457a-98db-8524a69bae65||
-|https://learn.acloud.guru/handson/2319a3d1-8ece-4352-8636-212cca0f0c9d||
-|https://learn.acloud.guru/handson/1167a5fe-7953-4f6c-89ed-50e8b18ccac3||
-|https://learn.acloud.guru/handson/c89bb3e8-4974-4168-be3b-ffe292824608||
-|https://learn.acloud.guru/handson/bef560af-6b54-4d0f-a95d-b941ec44cfb3||
-|https://learn.acloud.guru/handson/28d93bf2-b21d-4e5d-b351-4dc83d9f1070||
-|https://learn.acloud.guru/handson/593008ac-cae1-477e-a13e-51099eadb042||
-|https://learn.acloud.guru/handson/4690c366-3c29-4b6d-8014-0f837d5a54e5||
-|https://learn.acloud.guru/handson/4d3da1ac-fae1-4f00-bf07-c11b20a2e2ad||
-|https://learn.acloud.guru/handson/38c6212e-1a0e-4e04-ad09-5ec0e2efe3e1||
-|https://learn.acloud.guru/handson/45429a7c-d00e-4887-a7e4-4b42a5f4d1cc||
-|https://learn.acloud.guru/handson/ad821099-977c-4b46-9eec-b60ef6aa37d7||
-|https://learn.acloud.guru/handson/16697a70-25bf-4fc5-a110-ff907a5393c9||
-|https://learn.acloud.guru/handson/f978617e-40a2-4174-8ea4-5e29be5dea90||
-|https://learn.acloud.guru/handson/4030bdd4-e7a1-470c-84d3-22d6b0fc4bca||
+|https://learn.acloud.guru/handson/7eaff9b2-dd90-48cd-9675-dfb8f62c8a09|Implement Advanced CloudWatch Monitoring for a Web Server|
+|https://learn.acloud.guru/handson/cbda1fbf-6c65-439c-b284-ed96ef0e1f9d|Querying Data in S3 with Amazon Athena|
+|https://learn.acloud.guru/handson/d8590da1-be72-4e06-8a31-2e6e1c9863b6|Configuring S3 Buckets for Versioning and Deletion Protection |
+|https://learn.acloud.guru/handson/a0c93cdb-127d-43e5-9026-aea0a8dc5c5d|Creating and Configuring a Network Load Balancer in AWS|
+|https://learn.acloud.guru/handson/3f2be21a-91fd-4872-aa33-58a1ee38e832|Migrating from a Relational Database to DynamoDB|
+|https://learn.acloud.guru/handson/41b87a5a-b7e9-45d3-bd7c-cf9d93557a01|Joining, Enriching, and Transforming Streaming Data With Amazon Kinesis|
+|https://learn.acloud.guru/handson/b3dd0d1c-b4cf-489f-8a5b-fd0ccbf6d8fd|Creating an AWS CodeCommit Repository That Triggers Email Notifications|
+|https://learn.acloud.guru/handson/aae676dc-fe12-4fff-8d16-dd6a25e12f2b|Building a Serverless Application Using Step Functions, API Gateway, Lambda, and S3 in AWS|
+|https://learn.acloud.guru/handson/2d9e37e1-3733-4227-8e46-8d22dc519585|Configuring Amazon S3 Buckets to Host a Static Website with a Custom Domain|
+|https://learn.acloud.guru/handson/d70cdd62-361e-4dc9-af83-30a6b1ba4db5|Implementing an Elasticsearch Backed Search Microservice|
+|https://learn.acloud.guru/handson/d524d389-9ee2-490a-9f2d-95e0502b3682|Creating a DynamoDB Table|
+|https://learn.acloud.guru/handson/f2b58b6b-2a05-435a-8746-ca1ff25b9773|Creating a Simple AWS Lambda Function|
+|https://learn.acloud.guru/handson/682d1793-2bc5-455b-9485-97be5499b676|Creating a Basic Lambda Function to Shut Down an EC2 Instance|
+|https://learn.acloud.guru/handson/ab9e8bda-1f6f-4af8-9465-f8e3e14cc7d1|Building a Microservice Application and DynamoDB Data Model|
+|https://learn.acloud.guru/handson/61adc9c0-7327-4212-bb45-372d61db939f|Using a DynamoDB Table Basic I/O|
+|https://learn.acloud.guru/handson/349a802d-49b3-41a1-8cbe-d211c05d4133|CodePipeline for Continuous Deployment to Elastic Beanstalk|
+|https://learn.acloud.guru/handson/4b94c76a-7cab-4f50-accc-3709552dfdd7|Securing Your S3 Bucket from A to Z|
+|https://learn.acloud.guru/handson/9c11732b-b9f7-403d-8cb8-d70f7b5f34fb|Using Data Pipeline to Export DynamoDB Data to S3|
+|https://learn.acloud.guru/handson/9f1588c0-7186-475b-8bd1-9d88b86779e5|Querying Data in Amazon S3 with Amazon Athena|
+|https://learn.acloud.guru/handson/262a58ab-49e1-4102-b2a2-b746c06ba74d|Working with AWS SQS FIFO Queues|
+|https://learn.acloud.guru/handson/8a6fba26-ff01-457a-98db-8524a69bae65|Deploying a Highly Available Web Application and a Bastion Host in AWS|
+|https://learn.acloud.guru/handson/2319a3d1-8ece-4352-8636-212cca0f0c9d|Using CloudWatch Dashboards to Monitor Resource Utilization|
+|https://learn.acloud.guru/handson/1167a5fe-7953-4f6c-89ed-50e8b18ccac3|Creating and Subscribing to AWS SNS Topics|
+|https://learn.acloud.guru/handson/c89bb3e8-4974-4168-be3b-ffe292824608|Assigning a FQDN (Fully Qualified Domain Name) to an EC2 Instance Using Route 53|
+|https://learn.acloud.guru/handson/bef560af-6b54-4d0f-a95d-b941ec44cfb3|Deploying to AWS with Terraform and Ansible|
+|https://learn.acloud.guru/handson/28d93bf2-b21d-4e5d-b351-4dc83d9f1070|Implementing a Simple DynamoDB Application|
+|https://learn.acloud.guru/handson/593008ac-cae1-477e-a13e-51099eadb042|Processing DynamoDB Streams Using Lambda|
+|https://learn.acloud.guru/handson/4690c366-3c29-4b6d-8014-0f837d5a54e5|Building a CI/CD Pipeline with AWS CodePipeline to Deploy a Static Website on S3|
+|https://learn.acloud.guru/handson/4d3da1ac-fae1-4f00-bf07-c11b20a2e2ad|Deploying to AWS with Ansible|
+|https://learn.acloud.guru/handson/38c6212e-1a0e-4e04-ad09-5ec0e2efe3e1|Manipulating EC2 Instances with Ansible|
+|https://learn.acloud.guru/handson/45429a7c-d00e-4887-a7e4-4b42a5f4d1cc|Deploying and Updating a Web Application with a CI/CD Pipeline Using AWS CodeStar|
+|https://learn.acloud.guru/handson/ad821099-977c-4b46-9eec-b60ef6aa37d7|Deploying a Website Canary with CloudFormation|
+|https://learn.acloud.guru/handson/16697a70-25bf-4fc5-a110-ff907a5393c9|Using Prometheus with Kubernetes|
+|https://learn.acloud.guru/handson/f978617e-40a2-4174-8ea4-5e29be5dea90|Deploying to AWS with Travis CI|
+|https://learn.acloud.guru/handson/4030bdd4-e7a1-470c-84d3-22d6b0fc4bca|Scaling a MEAN App in Lightsail Using App Tiers|
 |https://learn.acloud.guru/handson/711879e3-75f6-417e-a6eb-f72e1b561c35|Introduction to Amazon S3|
 
 - Udemy
