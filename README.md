@@ -180,7 +180,7 @@
   - HTTPS
   - SSL/TLS
 - Encryption at Rest: Server side Encryption
-  - SSE-S3: S3 maanged keys, using AES 256 (x-amz-server-side-encryption:AES256)
+  - SSE-S3: S3 managed keys, using AES 256 (x-amz-server-side-encryption:AES256)
   - SSE-KMS: AWS KMS managed keys (x-amz-server-side-encryption:aaws:kms)(limites to upload and download)
   - SSE-C: Customer provided keys
 - Encryption at Rest: Client side Encryption
@@ -195,6 +195,18 @@
 - Multipart uploads are used to upload larger files in S3 efficiently ( better to use for > 100MB and definitely > 5GB ).
 - Use S3 byte range fetches to increase performance when downloading files to S3.
 - When using KMS, there is an upper limit. Breaching this would slower performance.
+
+### S3 Summary
+- S3 is Simple Storage Service - highly available and durable.
+- A static web hosting option is possible.
+- Making a bucket and its content public can be done via a JSON policy.
+- Is Object based storage and so is suitable for write-once and read-many times scenario.
+- Not suitable as a database or cache.
+- Storage classes decide the ease of retrieval and costs involved.
+- Can configure replication rules to move data between regions, lifecycle rule to move data between different storage classes.
+- Different versions of the same object could also live, which are configured by versioning rules.
+- Encryption is supported - client side and server side.
+- Prefixes to names help in increased performance.
 
 ## IAM
 - Root Account - Has full administrative account for the AWS account.
