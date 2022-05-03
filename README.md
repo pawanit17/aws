@@ -23,6 +23,7 @@
 - 👍 Build a simple application with a front end that communicates to AWS backend on EBS.
 - 🏃 Build an app that retuns a list of movies of a given genre.
 - Build an app that leverages AWS load balancer
+  - Application load balancer 
 - Build a simple application on SpringBoot and deploy it to containers and then to AWS using containers
 - CI/CD of a simple application
 - How to connect to an Elastic Beanstalk server using SSH or RDP?.
@@ -250,13 +251,33 @@
     - Buy unused instances at cheaper prices. Good for applications that have flexible start and end times. 
   - Dedicated
     - Banking, Finance applications could have certain regulations to not deploy in multi tenancy virtualization.
+- EC2 instances need VPC for operation.
 
 
+## Load Balancer
+- A brief intro to the differences between these two services.
+- Application Load Balancer
+  - The listeners work at layer 7 and have access to request headers.
+  - URL based, Host based, Query String based load balancing.
+  - This is suited for Microservices based applications as this service can load balance Containers as well.
+  - Works with Http, Https, gRPC protocols.  
+- Network Load Balancer
+  - Operates at Network level.
+  - TLS offloading can be done at Network Load Balancer.
+  - Suited for cases where Low latency is expected.
+  - UDP, TCP, TLS protocols apply here.
+- Both the load balancing services are newer generation.
+- Classic load balancer are deprecated.
 
-
+### Application Load Balancer
+- We designate a group of EC2 instances as a target group and an Application Load Balancer service is configured to bound this target group.
+- ![image](https://user-images.githubusercontent.com/42272776/166507445-0be41fc2-d1cf-4660-8c07-e24405ded8eb.png)
+- We can even configure sticky sessions in the target group - which may be useful for stateful applications.
+- Two EC2 instances for which an ALB shall be configured
+- ![image](https://user-images.githubusercontent.com/42272776/166507004-ee31bd6b-0b87-484d-897c-6073080efbcb.png)
+- ![image](https://user-images.githubusercontent.com/42272776/166507951-30b12054-3826-47ea-8d41-28a609c1217b.png)
 
 # Lambda / Serverless
-
 
 Lambda
 - [Hosting a Lambda function to determine if a Web Page is Up or Not](#hosting-a-lambda-function-that-tells-whether-a-web-page-is-up-or-not)
