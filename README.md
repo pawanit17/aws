@@ -239,7 +239,7 @@
   - When a new user is created, by default he does not have any access.
 - SAML - To use the same username and password that a user uses to log into Windows, to log onto AWS. IAM Federation.
 
-# EC2
+## EC2
 - Elastic Compute Cloud
 - Types of instances
   - On Demand
