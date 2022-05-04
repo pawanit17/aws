@@ -10,19 +10,20 @@
 # Questions
 - How do you deploy a full stack application to AWS.
 - How does the application connect to the database.
-- How are REST APIs exposed to outside world.
-- What are VPCs.
+- *How are REST APIs exposed to outside world.
+- *What are VPCs.
 - What are Roles, IAM, security groups.
 - 🏃 How are logs of an application viewed in AWS
 - Deploy a NodeJS application to EC2 and EBS
 - Deploy a SpringBoot application to EC2 and EBS
-- How are docker based applications deployed to AWS
+- *How are docker based applications deployed to AWS
+- Ecs service
 - Where does K8s come into picture for AWS
 - Build a simple application that uploads file to S3
 - 👍 Build a simple application on SpringBoot and deploy to AWS using Elastic Beanstalk
 - 👍 Build a simple application with a front end that communicates to AWS backend on EBS.
 - 🏃 Build an app that retuns a list of movies of a given genre.
-- Build an app that leverages AWS load balancer
+- *Build an app that leverages AWS load balancer
   - Application load balancer 
 - Build a simple application on SpringBoot and deploy it to containers and then to AWS using containers
 - CI/CD of a simple application
