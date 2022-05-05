@@ -399,7 +399,6 @@ public class RestAPIController {
 - Udemy
 https://wipro.udemy.com/course/deploy-java-spring-apps-online/
 
-
 # Answers
 
 ## Deploying a SpringBoot application to Elastic Beanstalk
@@ -411,5 +410,7 @@ https://wipro.udemy.com/course/deploy-java-spring-apps-online/
 ![image](https://user-images.githubusercontent.com/42272776/166973630-d6c0d8db-4f6e-4b7d-a37f-cc1e9b747df0.png)
 
 ## What services get created behind the scenes when EBS service starts and why does SpringBoot application properties has to be updated for server port?.
-
+- When an EBS service starts, it also starts a load balancer, an Nginx proxy, atleast one EC2 instance behind the scenes.
+- Nginx forwards the requests to destination server on port 5000 by default. This is why this setting is needed.
+![image](https://user-images.githubusercontent.com/42272776/166974797-9d71e2c7-0a64-4cf6-b2ed-434342840046.png)
 
