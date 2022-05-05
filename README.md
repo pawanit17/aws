@@ -411,6 +411,8 @@ https://wipro.udemy.com/course/deploy-java-spring-apps-online/
 
 ## What services get created behind the scenes when EBS service starts and why does SpringBoot application properties has to be updated for server port?.
 - When an EBS service starts, it also starts a load balancer, an Nginx proxy, atleast one EC2 instance, Security Groups, IP Addresses behind the scenes.
+- https://pragmaticintegrator.wordpress.com/2016/07/12/run-your-spring-boot-application-on-aws-using-elastic-beanstalk/
 - Nginx forwards the requests to destination server on port 5000 by default. This is why this setting is needed.
 ![image](https://user-images.githubusercontent.com/42272776/166974797-9d71e2c7-0a64-4cf6-b2ed-434342840046.png)
+
 
