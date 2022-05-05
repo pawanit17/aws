@@ -15,7 +15,7 @@
 - What are Roles, IAM, security groups.
 - 🏃 How are logs of an application viewed in AWS
 - Deploy a NodeJS application to EC2 and EBS
-- Deploy a SpringBoot application to EC2 and EBS
+- Deploy a SpringBoot application to EBS
 - *How are docker based applications deployed to AWS
 - Ecs service
 - Where does K8s come into picture for AWS
@@ -398,3 +398,18 @@ public class RestAPIController {
 
 - Udemy
 https://wipro.udemy.com/course/deploy-java-spring-apps-online/
+
+
+# Answers
+
+## Deploying a SpringBoot application to Elastic Beanstalk
+- Develop a SpringBoot application and build the jar for it using mvn install.
+- Application.properties has to be configured with server.port=5000 to facilitate Nginx reverse proxy.
+- In AWS, under EBS, create a service uploading this jar as the payload.
+![image](https://user-images.githubusercontent.com/42272776/166973958-cacb2c83-91d6-42ad-aec3-7ef6a62f60af.png)
+- Once the service starts, the application can be accessed.
+![image](https://user-images.githubusercontent.com/42272776/166973630-d6c0d8db-4f6e-4b7d-a37f-cc1e9b747df0.png)
+
+## What services get created behind the scenes when EBS service starts and why does SpringBoot application properties has to be updated for server port?.
+
+
