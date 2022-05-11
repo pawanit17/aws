@@ -1,3 +1,7 @@
+
+https://github.com/pawanit17/aws#container-services-on-aws
+
+
 # Introduction:
 - Region is a location - Sydney, Capetown, Mumbai etc. Each Region contains 2 or more AZs.
 - Availability Zone is like a datacenter - Hitech Campus Eindhoven. This can be more than one datacenter. Each AZ in a region are like 100Kms from each other.
