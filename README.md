@@ -349,6 +349,11 @@ public class RestAPIController {
 ## CodeCommit
 
 ## Container services on AWS
+- Fargate
+- ECS
+- EKS
+- ECR
+- Copilot?
 
 
 # TODO
@@ -417,5 +422,4 @@ https://wipro.udemy.com/course/deploy-java-spring-apps-online/
 - https://pragmaticintegrator.wordpress.com/2016/07/12/run-your-spring-boot-application-on-aws-using-elastic-beanstalk/
 - Nginx forwards the requests to destination server on port 5000 by default. This is why this setting is needed.
 ![image](https://user-images.githubusercontent.com/42272776/166974797-9d71e2c7-0a64-4cf6-b2ed-434342840046.png)
-
 
