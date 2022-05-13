@@ -355,6 +355,7 @@ public class RestAPIController {
 ## Container services on AWS
 - Fargate
 - ECS
+  - Elastic Cloud Service 
 - EKS
 - ECR
 - Copilot?
