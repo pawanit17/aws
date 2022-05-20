@@ -359,6 +359,7 @@ public class RestAPIController {
 - EKS
 - ECR
 - Copilot?
+- SNS
 
 
 # TODO
