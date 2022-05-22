@@ -355,7 +355,9 @@ public class RestAPIController {
 ## Container services on AWS
 - Fargate
 - ECS
-  - Elastic Cloud Service 
+  - Elastic Cloud Service
+Read on: 
+https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate-7b0cbc9cd608
 - EKS
 - ECR
 - Copilot?
