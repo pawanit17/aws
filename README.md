@@ -11,6 +11,35 @@ https://github.com/pawanit17/aws#container-services-on-aws
 
 ![image](https://user-images.githubusercontent.com/42272776/160228124-a09bbc41-1c93-4495-b23b-ac73e4637375.png)
 
+# Table of contents
+- [S3](https://github.com/pawanit17/aws#s3)
+  - [Object vs Block Storage](https://github.com/pawanit17/aws#object-vs-block-storage--httpscloudnetappcomblogblock-storage-vs-object-storage-cloud-)
+  - [Storage Classes](https://github.com/pawanit17/aws#storage-classes)
+  - [Hosting a static website in AWS](https://github.com/pawanit17/aws#hosting-a-static-website-in-aws)
+  - [S3 Versioning](https://github.com/pawanit17/aws#s3-versioning)
+  - [S3 Replication](https://github.com/pawanit17/aws#s3-bucket-replication)
+  - [S3 Locks](https://github.com/pawanit17/aws#locks)
+  - [S3 Encryption](https://github.com/pawanit17/aws#encryption)
+  - [S3 Performance](https://github.com/pawanit17/aws#s3-performance)
+  - [S3 Summary](https://github.com/pawanit17/aws#s3-summary)
+- [IAM](https://github.com/pawanit17/aws#iam)
+- [EC2](https://github.com/pawanit17/aws#ec2)
+  - [Load Balancer](https://github.com/pawanit17/aws#load-balancer)
+    - [Application Load Balancer](https://github.com/pawanit17/aws#application-load-balancer)  
+- [Serverless](https://github.com/pawanit17/aws#lambda--serverless)
+  - [Lambda function that tells whether a web page is up or not](https://github.com/pawanit17/aws#hosting-a-lambda-function-that-tells-whether-a-web-page-is-up-or-not)
+- [DynamoDB](https://github.com/pawanit17/aws#dynamodb)
+- [Elastic Beanstalk](https://github.com/pawanit17/aws#elastic-beanstalk)
+  - [Deploying a SpringBoot application to EBS](https://github.com/pawanit17/aws#deploying-a-springboot-jar-file-to-ebs)
+- [CI/CD](https://github.com/pawanit17/aws#cicd)
+  - [AWS CodeStar](https://github.com/pawanit17/aws#codestar)
+- [Containers on AWS](https://github.com/pawanit17/aws#container-services-on-aws)
+- [Knowledgeful Handson](https://github.com/pawanit17/aws#todo)
+- [Answers](https://github.com/pawanit17/aws#answers)
+  - [Deploying SpringBoot application on EBS](https://github.com/pawanit17/aws#deploying-a-springboot-application-to-elastic-beanstalk) 
+  - [What services start when EBS service starts](https://github.com/pawanit17/aws#what-services-get-created-behind-the-scenes-when-ebs-service-starts-and-why-does-springboot-application-properties-has-to-be-updated-for-server-port)
+
+
 # Questions
 - How do you deploy a full stack application to AWS.
 - How does the application connect to the database.
@@ -19,7 +48,7 @@ https://github.com/pawanit17/aws#container-services-on-aws
 - What are Roles, IAM, security groups.
 - 🏃 How are logs of an application viewed in AWS
 - Deploy a NodeJS application to EC2 and EBS
-- Deploy a SpringBoot application to EBS
+- 👍 Deploy a SpringBoot application to EBS
 - *How are docker based applications deployed to AWS
 - Ecs service
 - Where does K8s come into picture for AWS
