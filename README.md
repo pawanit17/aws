@@ -434,6 +434,7 @@ https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate
 ![IMG_20220530_231108197](https://user-images.githubusercontent.com/42272776/171040670-f94c3bf4-9061-4b2b-9116-06a4211a6b4b.jpg)
 - One REST API endpoint does a GET Request to Subscribe an email address to an SNS topic.
 - Another REST API endpoint does a GET REQUEST to publish the content to SNS topic. This action would make the SNS service to send the email/notification to all the subscriber i.e., first point.
+- https://www.youtube.com/watch?v=lF7Ba4-8ER4
 
 ```
 @Configuration
