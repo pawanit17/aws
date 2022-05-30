@@ -1,16 +1,6 @@
 
 https://github.com/pawanit17/aws#container-services-on-aws
 
-
-# Introduction:
-- Region is a location - Sydney, Capetown, Mumbai etc. Each Region contains 2 or more AZs.
-- Availability Zone is like a datacenter - Hitech Campus Eindhoven. This can be more than one datacenter. Each AZ in a region are like 100Kms from each other.
-- Edge Location - Endpoints for caching like CloudFront (CDN). More than 200 edge locations.
-
-- Whitepapers: https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html?did=wp_card&trk=wp_card
-
-![image](https://user-images.githubusercontent.com/42272776/160228124-a09bbc41-1c93-4495-b23b-ac73e4637375.png)
-
 # Table of contents
 - [S3](https://github.com/pawanit17/aws#s3)
   - [Object vs Block Storage](https://github.com/pawanit17/aws#object-vs-block-storage--httpscloudnetappcomblogblock-storage-vs-object-storage-cloud-)
@@ -39,6 +29,14 @@ https://github.com/pawanit17/aws#container-services-on-aws
   - [Deploying SpringBoot application on EBS](https://github.com/pawanit17/aws#deploying-a-springboot-application-to-elastic-beanstalk) 
   - [What services start when EBS service starts](https://github.com/pawanit17/aws#what-services-get-created-behind-the-scenes-when-ebs-service-starts-and-why-does-springboot-application-properties-has-to-be-updated-for-server-port)
 
+# Introduction:
+- Region is a location - Sydney, Capetown, Mumbai etc. Each Region contains 2 or more AZs.
+- Availability Zone is like a datacenter - Hitech Campus Eindhoven. This can be more than one datacenter. Each AZ in a region are like 100Kms from each other.
+- Edge Location - Endpoints for caching like CloudFront (CDN). More than 200 edge locations.
+
+- Whitepapers: https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html?did=wp_card&trk=wp_card
+
+![image](https://user-images.githubusercontent.com/42272776/160228124-a09bbc41-1c93-4495-b23b-ac73e4637375.png)
 
 # Questions
 - How do you deploy a full stack application to AWS.
@@ -390,8 +388,47 @@ https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate
 - EKS
 - ECR
 - Copilot?
-- SNS
 
+## Messaging Services
+### Simple Notification Server - SNS
+- What problem does message queues solve?
+  - Tight coupling: If the two systems are directly connected, a message cannot be sent to the second system if it is down.
+  - Performance: The producer can produce as many messages as they would want and the consumer would only process them at its own pace. 
+- Fully managed service with auto scailng.
+- Encryption at rest is automatically provided. For encryption in transit, developers need to create key/value pairs and manually do the configuration.
+- Composed of Topics ( think of it as an event type or a subject ) and Subscriptions to those Topics.
+  - App to App { SQS }
+  - App to Person { Email, SMS } 
+- SNS employs a Pub-Sub model.
+- It is a notification service. Useful when more than one system is to be notified.
+- SNS can send notifications to SQS which can then be used by the target application for instance.
+- SNS vs SQS
+  - If other systems need to know about an event generated, use SNS.
+  - If only the current system cares about it, use SQS.
+  - SNS is a PUSH system. SQS is a PULL system.
+
+```
+- One SQL can broadcast messages to several SQL using SNS.
+- SQS -> SNS -> SQS1
+             -> SQS2
+             -> SQS3
+```
+
+- Sample usecase
+![image](https://user-images.githubusercontent.com/42272776/171029813-66c43f71-acf7-46e6-ae27-b45dea2e49ed.png)
+- A number of users may be subscribed to promotion offers form retail chains, they are notified via these pub-sub architectures.
+- Connecting Lambda with SNS has one disadvantage that if the lambda processing fails, the message gets lost.
+- SNS can be integrated with HTTP endpoints, Emails, SMS messages.
+
+- Options
+  - We can configure who can send messages to SNS.
+  - Delivery retry policy.
+  - Logging facility @ CloudWatch.
+  - Filter Policy determines who among the subscribers should be sent the message.
+  - Message Attributes can be created that help in realizing Filter Policy.
+    - Ex: purchaseType -> Internet.
+  - Dead Letter Queue - Temp Queue that contains messages which could not be sent to the receiver.
+  - Push notifications are supported by SNS. 
 
 # TODO
 | URL      | Description |
