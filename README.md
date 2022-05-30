@@ -430,6 +430,60 @@ https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate
   - Dead Letter Queue - Temp Queue that contains messages which could not be sent to the receiver.
   - Push notifications are supported by SNS. 
 
+#### SpringBoot on AWS - Subscribing and Receiving Notification
+![IMG_20220530_231108197](https://user-images.githubusercontent.com/42272776/171040670-f94c3bf4-9061-4b2b-9116-06a4211a6b4b.jpg)
+- One REST API endpoint does a GET Request to Subscribe an email address to an SNS topic.
+- Another REST API endpoint does a GET REQUEST to publish the content to SNS topic. This action would make the SNS service to send the email/notification to all the subscriber i.e., first point.
+
+```
+@Configuration
+public class AWSSNSConfig {
+
+    @Primary
+    @Bean
+    public AmazonSNSClient getSnsClient(){
+        return (AmazonSNSClient) AmazonSNSClientBuilder.standard().withRegion(Regions.US_EAST_1)
+                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("AKIA2TKUBX7JOPEJLYUV","PHmuqdARP+hgQ/A9qtAKQuNHyC2lptycfoTQwgx4")))
+                .build();
+    }
+}
+```
+
+```
+@SpringBootApplication (exclude = {ContextStackAutoConfiguration.class, ContextRegionProviderAutoConfiguration.class})
+@RestController
+public class SnsConnectorApplication {
+
+	@Autowired
+	private AmazonSNSClient snsClient;
+
+	String TOPIC_ARN="arn:aws:sns:us-east-1:728710102994:hello-queue-topic";
+
+	@GetMapping("/subscribe/{email}")
+	public String subscribe(@PathVariable String email) {
+
+		SubscribeRequest request = new SubscribeRequest(TOPIC_ARN, "email", email);
+		snsClient.subscribe(request);
+
+		return "Programmatic subscription is pending. Check email!" + email;
+	}
+
+	@GetMapping("/publish")
+	public String publish(){
+
+		PublishRequest request = new PublishRequest(TOPIC_ARN, "Testing on-going", "Notification: Hello!!");
+		snsClient.publish(request);
+		return "Programmatic Notification send successfully";
+	}
+
+
+	public static void main(String[] args) {
+		SpringApplication.run(SnsConnectorApplication.class, args);
+	}
+
+}
+```
+
 # TODO
 | URL      | Description |
 | ----------- | ----------- |
