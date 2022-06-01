@@ -1,6 +1,4 @@
 
-https://github.com/pawanit17/aws#container-services-on-aws
-
 # Table of contents
 - [S3](https://github.com/pawanit17/aws#s3)
   - [Object vs Block Storage](https://github.com/pawanit17/aws#object-vs-block-storage--httpscloudnetappcomblogblock-storage-vs-object-storage-cloud-)
@@ -13,6 +11,7 @@ https://github.com/pawanit17/aws#container-services-on-aws
   - [S3 Performance](https://github.com/pawanit17/aws#s3-performance)
   - [S3 Summary](https://github.com/pawanit17/aws#s3-summary)
 - [IAM](https://github.com/pawanit17/aws#iam)
+  - How to read Policy documents 
 - [EC2](https://github.com/pawanit17/aws#ec2)
   - [Load Balancer](https://github.com/pawanit17/aws#load-balancer)
     - [Application Load Balancer](https://github.com/pawanit17/aws#application-load-balancer)  
