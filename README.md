@@ -486,7 +486,8 @@ public class SnsConnectorApplication {
 ```
 
 ### Simple Queue Server - SQS
-
+- Reference: https://www.youtube.com/watch?v=q3zo3YREfJI
+- Reference: https://cloud.spring.io/spring-cloud-static/spring-cloud-aws/1.2.3.RELEASE/multi/multi__messaging.html
 - First connect to AWS using the credentials
 ```
 
