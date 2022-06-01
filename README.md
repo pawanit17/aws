@@ -409,6 +409,7 @@ https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate
   - If other systems need to know about an event generated, use SNS.
   - If only the current system cares about it, use SQS.
   - SNS is a PUSH system. SQS is a PULL system.
+  - Usually, SQS content is READ by only a single system. SNS, on the other hand, almost always sends data to multiple systems.
 
 ```
 - One SQL can broadcast messages to several SQL using SNS.
@@ -416,6 +417,7 @@ https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate
              -> SQS2
              -> SQS3
 ```
+![image](https://user-images.githubusercontent.com/42272776/171399995-e93ae0c7-3096-401a-9bc3-6a3c56c43862.png)
 
 - Sample usecase
 ![image](https://user-images.githubusercontent.com/42272776/171029813-66c43f71-acf7-46e6-ae27-b45dea2e49ed.png)
@@ -434,6 +436,8 @@ https://towardsdatascience.com/deploying-a-docker-container-with-ecs-and-fargate
   - Push notifications are supported by SNS. 
 
 #### SpringBoot on AWS - Subscribing and Receiving Notification
+![image](https://user-images.githubusercontent.com/42272776/171399934-9d3fa039-f618-44e4-8c75-b1a23243db63.png)
+
 ![IMG_20220530_231108197](https://user-images.githubusercontent.com/42272776/171040670-f94c3bf4-9061-4b2b-9116-06a4211a6b4b.jpg)
 - One REST API endpoint does a GET Request to Subscribe an email address to an SNS topic.
 - Another REST API endpoint does a GET REQUEST to publish the content to SNS topic. This action would make the SNS service to send the email/notification to all the subscriber i.e., first point.
@@ -489,6 +493,7 @@ public class SnsConnectorApplication {
 ```
 
 ### Simple Queue Server - SQS
+- ![image](https://user-images.githubusercontent.com/42272776/171400052-2d8b79da-66bf-422a-b1fa-d79f3c82c81e.png)
 - Reference: https://www.youtube.com/watch?v=q3zo3YREfJI
 - Reference: https://cloud.spring.io/spring-cloud-static/spring-cloud-aws/1.2.3.RELEASE/multi/multi__messaging.html
 - First connect to AWS using the credentials
