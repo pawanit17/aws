@@ -556,6 +556,43 @@ public class SqsConnectorApplication {
 }
 ```
 
+### Connecting SNS to SQS
+- Create SNS
+- Create SQS
+- Subscribe the SQS to the SNS topic
+- Grant the SNS topic access to send messages to SQS.
+```
+{
+  "Version": "2008-10-17",
+  "Id": "__default_policy_ID",
+  "Statement": [
+    {
+      "Sid": "__owner_statement",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::094002318819:root"
+      },
+      "Action": "SQS:*",
+      "Resource": "arn:aws:sqs:us-east-1:094002318819:sqs-component"
+    },
+    {
+      "Sid": "MySQSPolicy001",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "sqs:SendMessage",
+      "Resource": "arn:aws:sqs:us-east-1:094002318819:sqs-component",
+      "Condition": {
+        "ArnEquals": {
+          "aws:SourceArn": "arn:aws:sns:us-east-1:094002318819:sns-component"
+        }
+      }
+    }
+  ]
+}
+```
+- Now a message that is published to the SNS topic would end up with the SQS queue.
+- ![image](https://user-images.githubusercontent.com/42272776/171427487-3d865a33-a198-413a-b658-b940931c71e7.png)
+
 
 # TODO
 | URL      | Description |
