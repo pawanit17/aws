@@ -485,6 +485,69 @@ public class SnsConnectorApplication {
 }
 ```
 
+### Simple Queue Server - SQS
+
+- First connect to AWS using the credentials
+```
+
+@Configuration
+public class AWSSQSConfig {
+
+    @Bean
+    public QueueMessagingTemplate queueMessageTemplate(){
+        return new QueueMessagingTemplate(amazonSQSAsync());
+    }
+
+    @Primary
+    @Bean
+    public AmazonSQSAsync amazonSQSAsync() {
+        return AmazonSQSAsyncClientBuilder.standard().withRegion(Regions.US_EAST_1)
+                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("-----345AZO24Q7UTX","---------w5mueVvbR09OVuAc2XmBafv4zsgT")))
+                .build();
+    }
+}
+```
+
+- Next, using the QueueMessageTemplate instance, we would send and receive messages with the AWS SQS Queue.
+```
+@SpringBootApplication (exclude = {ContextStackAutoConfiguration.class, ContextRegionProviderAutoConfiguration.class})
+@RestController
+public class SqsConnectorApplication {
+
+	Logger logger = LoggerFactory.getLogger(SqsConnectorApplication.class);
+
+	@Autowired
+	private QueueMessagingTemplate queueMessagingTemplate;
+
+	String endpoint = "https://sqs.us-east-1.amazonaws.com/872809293874/hello-sqs";
+
+	@GetMapping("/send/{message}")
+	public String sendMessage(@PathVariable String message) {
+
+		queueMessagingTemplate.send(endpoint, MessageBuilder.withPayload(message).build());
+		return "Programmatic message post is complete";
+	}
+
+	@GetMapping("/receive")
+	public String receiveMessage() {
+
+		String message = queueMessagingTemplate.receiveAndConvert(endpoint, String.class);
+		return "Programmatic message receive is complete" + message;
+	}
+
+	// For test only - @SqsListener("hello-sqs")
+	public void loadMessage(String message)
+	{
+		logger.info("Message from SQS Queue is " + message);
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(SqsConnectorApplication.class, args);
+	}
+}
+```
+
+
 # TODO
 | URL      | Description |
 | ----------- | ----------- |
