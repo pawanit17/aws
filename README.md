@@ -333,7 +333,9 @@ Lambda
 # Databases
 - How to choose a service for a database
 - https://www.youtube.com/watch?v=1aY2KJldLz0
-- RDS
+- RDBMS
+  - RDS
+  - Aurora
 - Key Value
   - Amazon Keyspaces 
 - Document Databases
