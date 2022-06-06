@@ -333,6 +333,17 @@ Lambda
 # Databases
 - How to choose a service for a database
 - https://www.youtube.com/watch?v=1aY2KJldLz0
+- RDS
+- Key Value
+  - Amazon Keyspaces 
+- Document Databases
+  - Amazon DynamoDB 
+- Graph Database
+  - Neptune  
+- In Memory Databases / Caches
+  -  Amazon ElasticCache
+- Search Databases
+  - Amazon ElasticSearch 
 
 # Elastic Beanstalk
 ## Deploying a SpringBoot jar file to EBS
