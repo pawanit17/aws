@@ -330,7 +330,9 @@ Lambda
 ![image](https://user-images.githubusercontent.com/42272776/143782116-fbedd5de-a894-4826-b65b-33d655bfb703.png)
 - For reference: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-logging.html
 
-# DynamoDB
+# Databases
+- How to choose a service for a database
+- https://www.youtube.com/watch?v=1aY2KJldLz0
 
 # Elastic Beanstalk
 ## Deploying a SpringBoot jar file to EBS
