@@ -398,6 +398,20 @@ public class RestAPIController {
 ## CodeCommit
 
 ## Github - AWS CI/CD Example
+![image](https://user-images.githubusercontent.com/42272776/172691204-213d8828-a7eb-4a5e-bdef-536ad133b7b4.png)
+
+- We first create an Elastic Beanstalk with NodeJS runtime.
+![image](https://user-images.githubusercontent.com/42272776/172692160-59a14238-e310-4692-911c-b109d29c32ac.png)
+
+- We then create an AWS CodePipeline, using Github V1 API connect it with Github choosing the repo and branch to which we are going to configure CI/CD. We also choose the Github webhook option which sends notifications to AWS on file commit event.
+![image](https://user-images.githubusercontent.com/42272776/172692018-1ce4b5f8-ba7b-4a8a-a4bc-cd898feafbac.png)
+
+- Now an update to the repo/branch configured in the above step would trigger a CICD pipeline and our changes will get deployed onto the Elastic Beanstalk instance.
+![image](https://user-images.githubusercontent.com/42272776/172691664-149ba749-d826-43ca-bee7-4279aea3b73d.png)
+
+- Deployed application
+![image](https://user-images.githubusercontent.com/42272776/172691801-8ac79745-cdf9-4b9a-b812-d2dee8ddebb6.png)
+
 
 ## Container services on AWS
 - Fargate
