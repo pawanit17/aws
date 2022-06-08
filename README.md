@@ -416,7 +416,8 @@ public class RestAPIController {
 - Note: Build artifacts, example, cloned repo are configured to be stored in an S3 bucket.
 ![image](https://user-images.githubusercontent.com/42272776/172693173-0b4f6ff9-f1fd-4b3a-9a74-6aebeadf171d.png)
 
-
+## Next steps
+- https://aws.amazon.com/getting-started/hands-on/set-up-ci-cd-pipeline/
 
 ## Container services on AWS
 - Fargate
