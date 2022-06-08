@@ -413,6 +413,10 @@ public class RestAPIController {
 - Deployed application
 ![image](https://user-images.githubusercontent.com/42272776/172691801-8ac79745-cdf9-4b9a-b812-d2dee8ddebb6.png)
 
+- Note: Build artifacts, example, cloned repo are configured to be stored in an S3 bucket.
+![image](https://user-images.githubusercontent.com/42272776/172693173-0b4f6ff9-f1fd-4b3a-9a74-6aebeadf171d.png)
+
+
 
 ## Container services on AWS
 - Fargate
