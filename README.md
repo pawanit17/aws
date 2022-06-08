@@ -418,6 +418,8 @@ public class RestAPIController {
 
 ## Next steps
 - https://aws.amazon.com/getting-started/hands-on/set-up-ci-cd-pipeline/
+- https://aws.amazon.com/blogs/devops/integrating-aws-codecommit-with-jenkins/
+- Build a container in build step and deploy it to ECR, ECS/EKS in the deploy step.
 
 ## Container services on AWS
 - Fargate
