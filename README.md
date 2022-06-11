@@ -398,7 +398,7 @@ public class RestAPIController {
 
 ## CodeCommit
 
-## Github - AWS CI/CD Example
+## Github - AWS CI/CD Example ( Elastic Beanstalk )
 ![image](https://user-images.githubusercontent.com/42272776/172691204-213d8828-a7eb-4a5e-bdef-536ad133b7b4.png)
 
 - We first create an Elastic Beanstalk with NodeJS runtime.
@@ -415,6 +415,8 @@ public class RestAPIController {
 
 - Note: Build artifacts, example, cloned repo are configured to be stored in an S3 bucket.
 ![image](https://user-images.githubusercontent.com/42272776/172693173-0b4f6ff9-f1fd-4b3a-9a74-6aebeadf171d.png)
+
+## SpringBoot - AWS CI/CD Example (EC2)
 
 ## Next steps
 - https://aws.amazon.com/getting-started/hands-on/set-up-ci-cd-pipeline/
