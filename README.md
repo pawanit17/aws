@@ -634,6 +634,8 @@ public class SqsConnectorApplication {
 - Now a message that is published to the SNS topic would end up with the SQS queue.
 - ![image](https://user-images.githubusercontent.com/42272776/171427487-3d865a33-a198-413a-b658-b940931c71e7.png)
 
+# AWS Athena
+
 
 # TODO
 | URL      | Description |
