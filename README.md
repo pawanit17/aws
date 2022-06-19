@@ -635,6 +635,17 @@ public class SqsConnectorApplication {
 - ![image](https://user-images.githubusercontent.com/42272776/171427487-3d865a33-a198-413a-b658-b940931c71e7.png)
 
 # AWS Athena
+- (Session by Amar Mudiraj)
+- Interactive query service that helps in analyzing data directly in Amazon S3 using standard S3.
+- Athena is serverless and so we only pay for the queries that we run.
+- Athena scales automatically - runs queries in parallel. Works with large datasets and complex queries.
+- Uses schema-on-read technology. No loading or transformation required.
+- ![image](https://user-images.githubusercontent.com/42272776/174489411-36602b83-1c15-4d19-bf18-c87caee49f43.png)
+- AWS Glue is used for metadata store for data in S3. This reduces the complexity of queries.
+- ![image](https://user-images.githubusercontent.com/42272776/174489733-4779406d-78be-4f29-9bcd-51d8a7bcea91.png)
+- ![image](https://user-images.githubusercontent.com/42272776/174490055-6c142ad2-3a95-4f01-9588-d6425db34a76.png)
+
+
 
 
 # TODO
